@@ -20,6 +20,10 @@
 !/.config/waybar/config.jsonc
 !/.config/matugen/
 !/.config/rofi/
+/.config/rofi/*
+!/.config/rofi/config.rasi
+!/.config/rofi/images
+!/.config/rofi/launchers
 !/.config/kitty/
 !/.config/mpv/
 !/.config/tmux/
