@@ -1,0 +1,11 @@
+[Unit]
+Description=Changes the wallpaper
+After=wallpaper_daemon.service
+Requires=wallpaper_daemon.service
+
+[Service]
+ExecStart=/usr/bin/bash /home/daky/.config/hypr/scripts/wallpaper.sh
+Restart=always
+
+[Install]
+WantedBy=wallpaper_daemon.service

@@ -1,0 +1,12 @@
+[Unit]
+Description=This is the daemon needed for the wallpaper.sh script, which is in ~/.config/hypr/scripts/
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/awww-daemon --format argb --no-cache -q
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
